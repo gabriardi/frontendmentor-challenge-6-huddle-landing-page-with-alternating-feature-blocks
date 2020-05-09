@@ -163,7 +163,7 @@ h2 {
   font-size: 1.6rem;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 48em) {
   .heading__description {
     margin: 3rem 0;
   }
@@ -326,7 +326,7 @@ h2 {
   transition: all 0.2s;
 }
 
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 48em) {
   .cta__btn {
     font-size: 1.4rem;
     padding: 2rem 8rem;
