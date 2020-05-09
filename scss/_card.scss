@@ -1,0 +1,74 @@
+.card {
+  background-color: #fff;
+  border-radius: $border-radius-card;
+  margin: 3rem 2rem;
+  padding: 4rem 1.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  display: grid;
+  text-align: center;
+
+  @media only screen and (min-width: $bp-tablet) {
+    margin: 4rem auto;
+    padding: 4rem;
+    max-width: 80%;
+  }
+
+  @media only screen and (min-width: $bp-laptop) {
+    text-align: left;
+
+    &--text-right {
+      grid-template-columns: 60% 40%;
+    }
+    &--text-left {
+      grid-template-columns: 40% 60%;
+    }
+
+    &--text-left &__img {
+      justify-self: end;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    &--text-left &__text {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+
+  &__text {
+    &__title {
+      margin: 3rem 0 1rem;
+      @media only screen and (min-width: $bp-laptop) {
+        margin: 0 0 1rem;
+      }
+    }
+
+    &__description {
+      padding: 0 1.5rem;
+      color: $color-gray;
+
+      @media only screen and (min-width: $bp-laptop) {
+        padding: 0;
+      }
+    }
+    @media only screen and (min-width: $bp-laptop) {
+      align-self: center;
+    }
+  }
+
+  &__img {
+    padding: 2rem;
+    @media only screen and (min-width: $bp-laptop) {
+      align-self: center;
+      height: 40rem;
+      display: flex;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      @media only screen and (min-width: $bp-laptop) {
+        max-height: 100%;
+        align-self: center;
+      }
+    }
+  }
+}

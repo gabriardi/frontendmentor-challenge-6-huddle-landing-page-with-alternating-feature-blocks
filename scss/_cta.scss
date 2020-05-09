@@ -1,0 +1,44 @@
+.cta {
+  margin-top: 10rem;
+  position: relative;
+  z-index: 10;
+
+  @media only screen and (min-width: $bp-laptop) {
+    margin: 15rem auto 0;
+    width: 60%;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+    @media only screen and (min-width: $bp-laptop) {
+      justify-self: center;
+    }
+  }
+  &__btn {
+    justify-self: center;
+    outline: none;
+    border: none;
+    background-color: $color-primary-pink;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 1.2rem 6rem;
+    border-radius: $border-radius-btn;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+
+    @media only screen and (min-width: $bp-laptop) {
+      font-size: 1.4rem;
+      padding: 2rem 8rem;
+      align-self: center;
+    }
+
+    &:hover {
+      background-color: lighten($color-primary-pink, 15);
+    }
+    &:active {
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+      transform: translateY(0.1rem);
+    }
+  }
+}
