@@ -129,8 +129,8 @@ h2 {
 }
 
 .heading {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ebfbff), to(#ebfbff)), url("../images/bg-hero-mobile.svg");
-  background-image: linear-gradient(#ebfbff, #ebfbff), url("../images/bg-hero-mobile.svg");
+  background-image: url("../images/bg-hero-mobile.svg"), -webkit-gradient(linear, left top, left bottom, from(#ebfbff), to(#ebfbff));
+  background-image: url("../images/bg-hero-mobile.svg"), linear-gradient(#ebfbff, #ebfbff);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -143,6 +143,8 @@ h2 {
 
 @media only screen and (min-width: 90em) {
   .heading {
+    background-image: url("../images/bg-hero-desktop.svg"), -webkit-gradient(linear, left top, left bottom, from(#ebfbff), to(#ebfbff));
+    background-image: url("../images/bg-hero-desktop.svg"), linear-gradient(#ebfbff, #ebfbff);
     text-align: left;
     padding: 4rem 8rem 4rem;
     -ms-grid-columns: 0.8fr 1.2fr;

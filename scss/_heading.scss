@@ -1,6 +1,6 @@
 .heading {
-  background-image: linear-gradient($color-neutral-light, $color-neutral-light),
-    url('../images/bg-hero-mobile.svg');
+  background-image: url('../images/bg-hero-mobile.svg'),
+    linear-gradient($color-neutral-light, $color-neutral-light);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -10,6 +10,9 @@
   margin-bottom: 6rem;
 
   @media only screen and (min-width: $bp-laptop) {
+    background-image: url('../images/bg-hero-desktop.svg'),
+      linear-gradient($color-neutral-light, $color-neutral-light);
+
     text-align: left;
     padding: 4rem 8rem 4rem;
     grid-template-columns: 0.8fr 1.2fr;
